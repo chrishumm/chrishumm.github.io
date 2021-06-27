@@ -17,7 +17,7 @@ I completed my undergraduate studies at [Austin College in Sherman, TX](https://
 Surprisingly, I started with physics and found I enjoyed the math courses more.
 After taking my required C.S. course for my math degree, I fell in love, and the rest is history.
 
-I love bicycles, airplanes, and music.
+I love bicycles, reading, and music.
 I'm currently building a Thatcher CX4, which is a single-seat aluminum airplane built from plans and powered by a converted VW Beetle engine.
 The build's site can be accessed from the sidebar.
 Also, my cat's name is Sir Isaac Newton.

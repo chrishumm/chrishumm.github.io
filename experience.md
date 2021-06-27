@@ -4,7 +4,7 @@ title: Experience
 featured_image: /assets/images/pages/experience/ROC.jpeg
 ---
 
->“The only source of knowledge is experience.” <cite>― Albert Einstein ―</cite>
+>“Just do it.” <cite>― Albert Einstein ―</cite>
 
 ## Data Science
 
