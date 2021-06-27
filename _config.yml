@@ -1,6 +1,6 @@
 # Site setings
 name: 'Chris Humm'
-description: 'cobelu'
+description: 'chumm'
 meta_description: 'co.be.lu'
 logo:
 # Author image is used in site sidebar and greetings in the home page hero text
@@ -21,15 +21,15 @@ production_url: https://cobelu.com/
 #thankyou_page_description: "Your message has been successfully sent. We will contact you very soon!"
 
 # Social links
-# twitter: 'justgoodthemes'
-facebook: 'connor.luckett'
-github: 'cobelu'
+twitter: 'chummbone'
+# facebook: 'connor.luckett'
+github: 'chrishumm'
 # codepen: 'username'
 # dribbble: 'username'
 # medium: '@username'
-instagram: 'imamac96'
+# instagram: 'imamac96'
 # pinterest: 'username'
-linkedin: 'cobelu'
+# linkedin: 'cobelu'
 # producthunt: '@username'
 # quora: 'username'
 
