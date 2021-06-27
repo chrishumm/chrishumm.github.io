@@ -9,7 +9,7 @@ author:
   greetings: "Hello, I'm Chris!"
 favicon: 'assets/images/favicon.ico'
 baseurl: 
-production_url: https://cobelu.com/
+production_url: https://chrishumm.com/
 # disqus: 'justgoodthemes'
 # mailchimp_url: '//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117'
 # Add your GA Tracking Id
@@ -21,15 +21,15 @@ production_url: https://cobelu.com/
 #thankyou_page_description: "Your message has been successfully sent. We will contact you very soon!"
 
 # Social links
-# twitter: 'justgoodthemes'
-facebook: 'connor.luckett'
-github: 'cobelu'
+ twitter: 'chummbone'
+#facebook: 'connor.luckett'
+github: 'chrishumm'
 # codepen: 'username'
 # dribbble: 'username'
 # medium: '@username'
-instagram: 'imamac96'
+#instagram: 'imamac96'
 # pinterest: 'username'
-linkedin: 'cobelu'
+#linkedin: 'cobelu'
 # producthunt: '@username'
 # quora: 'username'
 
@@ -43,7 +43,7 @@ navigation:
     url: /projects
   - text: Experience
     url: /experience
-  - text: CX4 Project
+  - text: Blog
     url: https://www.chrishumm.com/
 
 # Required Plugins

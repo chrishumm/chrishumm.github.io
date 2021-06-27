@@ -7,7 +7,7 @@ featured_image: /assets/images/pages/about/katy_trail.jpg
 >“Nothing compares to the simple pleasure of riding a bike.” <cite>― John F. Kennedy ―</cite>
 
 Hello!
-My name is Connor Lucket.
+My name is Chris Humm.
 I am a third-year Ph.D. student studying [Computer Science at Brown University](https://cs.brown.edu/), working with the [Brown Database Group](https://brownbigdata.github.io/).
 I am now a doctoral *candidate*, and my next step is to propose a thesis.
 I am currently looking at how to make GDPR-compliace easier for smaller enterprises (ICDE '21).
