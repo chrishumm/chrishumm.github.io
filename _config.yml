@@ -1,7 +1,7 @@
 # Site setings
 name: 'Chris Humm'
-description: 'cobelu'
-meta_description: 'co.be.lu'
+description: 'chumm'
+meta_description: 'ch.u.mm'
 logo:
 # Author image is used in site sidebar and greetings in the home page hero text
 author:
@@ -22,14 +22,14 @@ production_url: https://chrishumm.com/
 
 # Social links
  twitter: 'chummbone'
-#facebook: 'connor.luckett'
+#facebook: 'teusernamest'
 github: 'chrishumm'
 # codepen: 'username'
 # dribbble: 'username'
 # medium: '@username'
-#instagram: 'imamac96'
+#instagram: 'username'
 # pinterest: 'username'
-#linkedin: 'cobelu'
+#linkedin: 'username'
 # producthunt: '@username'
 # quora: 'username'
 
