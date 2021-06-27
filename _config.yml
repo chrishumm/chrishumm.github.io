@@ -1,0 +1,69 @@
+# Site setings
+name: 'Connor Luckett'
+description: 'cobelu'
+meta_description: 'co.be.lu'
+logo:
+# Author image is used in site sidebar and greetings in the home page hero text
+author:
+  image: 'authorimage.jpg'
+  greetings: "Hello, I'm Connor!"
+favicon: 'assets/images/favicon.ico'
+baseurl: 
+production_url: https://cobelu.com/
+# disqus: 'justgoodthemes'
+# mailchimp_url: '//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117'
+# Add your GA Tracking Id
+#ga_analytics:
+
+# Contact form setings
+#email: \<first-name\>_\<last-name\>@email.com
+#contact_page_description: "Get in contact with me!"
+#thankyou_page_description: "Your message has been successfully sent. We will contact you very soon!"
+
+# Social links
+# twitter: 'justgoodthemes'
+facebook: 'connor.luckett'
+github: 'cobelu'
+# codepen: 'username'
+# dribbble: 'username'
+# medium: '@username'
+instagram: 'imamac96'
+# pinterest: 'username'
+linkedin: 'cobelu'
+# producthunt: '@username'
+# quora: 'username'
+
+# Navigation
+navigation:
+  - text: Home
+    url: /
+  - text: About
+    url: /about
+  - text: Projects
+    url: /projects
+  - text: Experience
+    url: /experience
+  - text: CX4 Project
+    url: https://connorcx4.wordpress.com/
+
+# Required Plugins
+plugins_dir:
+  - jekyll-paginate
+  - jekyll-tagsgenerator
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Pagination
+paginate: 5
+paginate_path: /page:num/
+
+# Permalinks
+permalink: /:title
+
+# Other
+markdown: kramdown
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed
