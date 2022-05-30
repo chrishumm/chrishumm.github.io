@@ -1,12 +1,12 @@
 # Site setings
 name: 'Chris Humm'
 description: 'Chris Humm'
-meta_description: 'Network Engineer'
+meta_description: 'Chris Humm Software Developer Portfolio '
 logo:
 # Author image is used in site sidebar and greetings in the home page hero text
 author:
   image: 'authorimage.jpg'
-  greetings: "Hello, I'm Chris!"
+  greetings: "Hello, I'm Chris Humm!"
 favicon: 'assets/images/favicon.ico'
 baseurl: 
 production_url: https://chrishumm.com/
