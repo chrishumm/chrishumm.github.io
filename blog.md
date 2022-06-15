@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Projects | Chris Humm
+title: Blog | Chris Humm
 featured_image: /assets/images/pages/projects/quickie.jpg
 ---
 

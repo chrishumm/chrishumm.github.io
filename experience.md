@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Experience | Chris Humm
+title: Chris Humm | Experience
 featured_image: /assets/images/pages/experience/ROC.jpeg
 ---
 

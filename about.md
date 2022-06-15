@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About | Chris Humm
+title: Chris Humm | About Me
 featured_image: /assets/images/pages/about/katy_trail.jpg
 ---
 
