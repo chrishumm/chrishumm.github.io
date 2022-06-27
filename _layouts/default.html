@@ -1,58 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+# Copyright (c) 2018 Florian Klampfer <https://qwtel.com/>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+layout: base
+---
 
-    {% if site.plugins_dir contains 'jekyll-seo-tag' %}
-        {% include head-seo.html %}
-    {% else %}
-        <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.name | escape }}{% endif %}</title>
-        <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-        <link rel="canonical" href="{{ page.url | replace:'index.html', '' | absolute_url }}">
-    {% endif %}
+{% assign strings = site.data.strings %}
 
-    <!-- Site Favicon -->
-    <link rel="shortcut icon" href="{{ site.url }}/{{ site.baseurl }}{{ site.favicon }}" type="image/png" />
+<article class="page" role="article">
+  <header>
+    <h1 class="page-title">{{ page.title | default:strings.home | default:"Home" }}</h1>
+    {% include components/message.html text=page.description hide=page.hide_description %}
+  </header>
 
-    <!-- Font Embed Code -->
-	<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i|Karla:400,400i,700,700i" rel="stylesheet">
+  {{ content }}
 
-    <!-- CSS Styles -->
-    <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet">
-</head>
+  <hr class="dingbat related"/>
 
-{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+  {% if site.posts.size > 0 %}
+    <h2 class="hr-bottom">{{ strings.posts | default:"Posts" }}</h2>
+    <ul class="related-posts">
+      {% for post in site.posts limit:5 %}
+        {% include_cached components/post-list-item.html post=post %}
+      {% endfor %}
+    </ul>
+  {% endif %}
 
-<body class="{{ layout }}">
-    <div id="page" class="site">
-        {% include header.html %}
-        <div id="content" class="site-content fadeInDown delay_075s">
-            <div class="inner-wide">
-                {{ content }}
-
-                {% if paginator.total_posts > site.paginate %}
-                {% if page.class == 'tag-template' %}
-                {% include tag-pagination.html %}
-                {% endif %}
-                {% endif %}
-
-                {% if site.mailchimp_url and page.class == 'tag-template' %}
-                {% include newsletter-box.html %}
-                {% endif %}
-                {% include footer.html %}
-            </div><!-- .inner-wide -->
-        </div><!-- .site-content -->
-    </div><!-- .site -->
-
-    {% include analytics.html %}
-    <!-- Javascript Assets -->
-    <script src="{{ site.baseurl }}/assets/js/jquery-3.3.1.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/plugins.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/custom.js"></script>
-
-</body>
-
-</html>
+  {% assign pages = site.html_pages | where:"layout","page" | where_exp:"page","page.sitemap != false" %}
+  {% if pages.size > 0 %}
+    <h2 class="hr-bottom">{{ strings.pages | default:"Pages" }}</h2>
+    <ul class="related-posts">
+      {% for page in pages limit:5 %}
+        {% if page.layout == 'page' %}
+          <li class="h4">
+            <a href="{{ page.url | relative_url }}" class="flip-title">
+              <span>{{ page.title }}</span>
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+</article>

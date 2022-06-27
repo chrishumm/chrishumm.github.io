@@ -1,114 +1,45 @@
 ---
-layout: default
-disqus: false
-post_class: post-template
+# Copyright (c) 2018 Florian Klampfer <https://qwtel.com/>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+layout: base
 ---
 
-    <main id="main" class="site-main">
-    
-        <article class="post-full inner">
+{% assign version = jekyll.version | split:'.' %}
+{% assign major = version[0] | plus:0 %}
+{% assign minor = version[1] | plus:0 %}
+{% assign patch = version[2] | plus:0 %}
 
-            <header class="post-header">
-                <div class="post-meta">
-                    <time class="post-date" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d,
-                        %Y" }}</time>
-                </div><!-- .post-meta -->
-                <h1 class="post-title">{{ page.title }}</h1>
-                {% if page.tags.size > 0 %}
-                <div class="post-tags">
-                    {% for tag in page.tags %} {% if forloop.index == page.tags.size %}
-                    <a href='{{ site.baseurl }}tag/{{ tag | downcase | replace: ' ', '- ' }}/'>{{ tag | camelcase }}</a>
-                    {% else %}
-                    <a href='{{ site.baseurl }}tag/{{ tag | downcase | replace: ' ', '- ' }}/'>{{ tag | camelcase }}</a>
-                    {% endif %}
-                    {% endfor %}
-                </div>
-                {% endif %}
-            </header><!-- .post-header -->
+{% include_cached components/post.html post=page no_link_title=true no_excerpt=true hide_image=page.hide_image hide_description=page.hide_description %}
 
-            {% if page.featured_image %}
-            <div class="post-thumbnail">
-                <img src="{{ site.baseurl }}{{ page.featured_image }}" alt="{{ page.title }}">
-            </div>
-            {% endif %}
-            <div class="post-content">
-                {{content}}
-            </div>
-            <footer class="post-footer">
-                <div class="post-share">
-                    <span class="post-share-title">Share:</span>
-                    <a target="_blank" href="https://twitter.com/share?text={{ page.title | url_encode }}&amp;url={{ site.production_url }}{{ page.url | remove_first: '/' }}">Twitter</a>
-                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.production_url }}{{ page.url | remove_first: '/' }}">Facebook</a>
-                </div><!-- .share-post -->
-            </footer>
-            {% include disqus.html %}
-        </article>
-        {% if site.mailchimp_url %}
-            {% include newsletter-box.html %}
-        {% endif %}
-        <section class="read-next inner">
-            <h2 class="read-next-title">Read Next</h2>
-            {% if page.previous.url %}
-            <article class="post">
-                <header class="post-header">
-                    <div class="post-meta">
-                        <time class="published" datetime="{{page.previous.date | date: '%B %-d, %Y'}}">{{page.previous.date
-                            | date: "%B %-d, %Y"}}</time>
-                    </div>
-                    <h3 class="post-title"><a href="{{ site.baseurl }}{{page.previous.url}}">{{page.previous.title}}</a></h3>
-                    <p class="post-tags">
-                        {% if page.previous.tags.size > 0 %}
-                        {% for tag in page.previous.tags %}
-                        {% if forloop.index == page.previous.tags.size %}
-                        <a href='{{ site.baseurl }}/tag/{{ tag | downcase | replace: ' ', '-' }}/'>{{ tag | capitalize
-                            }}</a>
-                        {% else %}
-                        <a href='{{ site.baseurl }}/tag/{{ tag | downcase | replace: ' ', '-' }}/'>{{ tag | capitalize
-                            }}</a>
-                        {% endif %}
-                        {% endfor %}
-                        {% endif %}
-                    </p>
-                </header>
-            </article>
-            {% endif %}
-            {% if page.next.url %}
-            <article class="post">
-                <header class="post-header">
-                    <div class="post-meta">
-                        <time class="published" datetime="{{page.next.date | date: '%B %-d, %Y'}}">{{page.next.date |
-                            date: "%B %-d, %Y"}}</time>
-                    </div>
-                    <h3 class="post-title"><a href="{{ site.baseurl }}{{page.next.url}}">{{page.next.title}}</a></h3>
-                    <p class="post-tags">
-                        {% if page.next.tags.size > 0 %}
-                        {% for tag in page.next.tags %}
-                        {% if forloop.index == page.next.tags.size %}
-                        <a href='{{ site.baseurl }}/tag/{{ tag | downcase | replace: ' ', '-' }}/'>{{ tag | capitalize
-                            }}</a>
-                        {% else %}
-                        <a href='{{ site.baseurl }}/tag/{{ tag | downcase | replace: ' ', '-' }}/'>{{ tag | capitalize
-                            }}</a>
-                        {% endif %}
-                        {% endfor %}
-                        {% endif %}
-                    </p>
-                </header>
-            </article>
-            {% endif %}
-        </section><!-- .read-next -->
+{% include components/dingbat.html %}
 
-        <!-- Create a sorted array of tags -->
-        {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor
-        %}{%
-        endcapture %} {% assign sortedTags = site_tags | split:',' | sort %}
-        <section class="tagcloud inner">
-            <h2 class="tagcloud-title">Tags</h2>
-            <div class="tag-links">
-                {% for tag in sortedTags %}
-                <a href='{{ site.production_url }}tag/{{ tag | downcase | replace: ' ', '- ' }}/'>{{ tag | camelcase }}</a>
-                {% endfor %}
-            </div><!-- .tag-links -->
-        </section><!-- .tagcloud -->
-
-    </main><!-- .site-main -->
+{% assign addons = page.addons | default:site.hydejack.post_addons %}
+{% unless addons %}{% assign addons = "about,newsletter,related,random" | split:"," %}{% endunless %}
+{% for addon in addons %}
+  {% case addon %}
+  {% when 'about' %}
+     {% include_cached components/about.html author=page.author %}
+  {% when 'newsletter' %}
+    {% include if-non-null try="pro/newsletter.html" %}
+  {% when 'related' %}
+    {% include if-non-null try="pro/related-posts.html" fallback="components/related-posts.html" %}
+  {% when 'random' %}
+    {% include if-non-null try="pro/random-posts.html" %}
+  {% when 'comments' %}
+    {% include body/comments.html %}
+  {% else %}
+  {% endcase %}
+{% endfor %}

@@ -1,0 +1,10 @@
+{% if resume.certificates.size > 0 %}
+{{ strings.resume.certificates | default:"Certificates" }}
+{% for int in resume.certificates %}
+{{ int.name }}
+{{ strings.resume.name | default:"Name" }}{{ colon }}
+{% for key in int.keywords %}
+{{ key }}
+{% endfor %}
+{% endfor %}
+{% endif %}

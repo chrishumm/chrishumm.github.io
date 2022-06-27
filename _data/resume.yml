@@ -1,0 +1,156 @@
+# If you have a `resume.json` file, copy it into `_data` and delete this file.
+# If you don't have a JSON Resume you can just edit this YAML file instead.
+# See also: <https://jsonresume.org/>.
+basics:
+  name: "Christopher Humm"
+  label: "Programmer"
+  picture: "assets/img/resume_me.png"
+  email: ""
+  phone: "0907487411"
+  website: "https://chrishumm.com"
+  location:
+    city: "Hsinchu"
+    countryCode: "TW"
+  summary: >
+    I'm Chris from Southampton, UK
+    I am programmer who has developed several projects and enjoys developing software in my free time.
+    My interests include tinkering with Linux, learning new technologies and travelling.
+    I have worked for over five years teaching professionally in Taiwan, both as a tutor and instructor. 
+  profiles:
+    - network: "Twitter"
+      username: "chrishumm_"
+      url: "https://twitter.com/chrishumm_"
+    - network: "LinkedIn"
+      username: "Christopher Humm"
+      url: ""
+    - network: "Credly"
+      username: "My Certifications"
+      url: "https://www.credly.com/users/chris-humm"
+work:
+  - company: "Kentucky English"
+    position: "Instructor"
+    website: "https://kentuckyenglish.com"
+    startDate: "2018-06-01"
+    endDate: "2022-06-01"
+    summary: >
+      Private school based in southern Taiwan focused on young and adult learners.
+    highlights:
+      - "Professonally taught language skills and implemented innovative methods to engage learners"
+      - "Successfully authored and edited educational materials used in textbooks."
+      - "Received outstanding employee award in 2022"
+  - company: "Hess Educational Group"
+    position: "Teacher"
+    website: "http://hess.com.tw"
+    startDate: "2016-04-01"
+    endDate: "2018-06-01"
+    summary: >
+      An educational group based throughout Taiwan.
+    highlights:
+      - "Professionally instructed English to young learners and young adults."
+      - "Organised and participated in public speaking events at libraries and public areas."
+      - "Managed speech competitions in Taiwan as a judge"
+  - company: "Private Tutor"
+    position: "Tutor"
+    website: "https://chrishumm.com"
+    startDate: "2017-04-01"
+    endDate: ""
+    summary: >
+      Tutored adults and univeristy students.
+    highlights:
+      - "Successfully taught TOIEC/IELTS test preparation."
+      - "Prepared and enhanced clients’ oral presentation skills."
+  - company: "Self"
+    position: "Website Specialist"
+    startDate: "2009-04-01"
+    endDate: "2013-04-01"
+    summary: >
+      Created, managed and owned affiliate marketing website.
+    highlights:
+      - "Managed servers, CMS installations and domain management."
+      - "Utilised effective SEO campaign to improve search results."
+      - "Wrote engaging sales copy and generated leads."
+education:
+  - institution: "Southampton Solent University"
+    area: "Software Engineering"
+    studyType: "Bachelor"
+    startDate: "2011-06-01"
+    endDate: "2014-01-01"
+    gpa: "First Class Honours"
+certificates:
+    name: "CCNA Cisco Certified Network Associate"
+    date: '2019'
+    issuer: "Cisco"
+    url: "https://www.credly.com/users/chris-humm"
+awards:
+  - title: "CCNA Cisco Certified Network Associate"
+    date: "2020-02-01"
+    awarder: "Cisco"
+    url: 'www.poop.com'
+    summary: "Implemented routers and switches using real hardware and GNS3."
+  - title: "Amazon Web Services Solutions Associate"
+    date: "2022-05-04"
+    awarder: "Amazon"
+    summary: "Designed cloud services and practically learnt "
+  - title: "ITIL v4 Foundations"
+    date: "2021-06-24"
+    awarder: "Axelos"
+    summary: "Understands the key concepts of IT and digital service delivery including the key concepts, guiding principles and practices of ITIL for service management"
+  - title: "Azure Fundamentals AZ-900"
+    date: "2021-07-13"
+    awarder: "Microsoft"
+    summary: "Understood key cloud concepts using Azure."
+  - title: "TOCFL Chinese Certification"
+    date: "2018-01-04"
+    awarder: "Taiwan Ministry of Education"
+    summary: "Shows ability to communicate in Chinese."
+  - title: "TEFL 150 hours Certification "
+    date: "2018-06-01"
+    awarder: "HESS International Educational Group"
+    summary: "Completed 150 hours of training in classroom."
+skills:
+  - name: "AWS"
+    keywords:
+      - "DynamoDB"
+      - "S3"
+      - "Lambda"
+      - "EC2"
+  - name: "C++"
+    keywords:
+      - "DirectX"
+      - "Boost"
+      - "Allegro / SDL"
+      - "Android NDK"
+  - name: "Python"
+    keywords:
+      - "Tkinter / PyGui"
+      - "PyGame"
+      - "Django"
+  - name: "C#"
+    keywords:
+      - "Unity"
+      - ".NET"
+  - name: "Java"
+    keywords:
+      - "SpringBoot"
+  - name: "Web Development"
+    keywords:
+      - "HTML"
+      - "CSS"
+      - "Javascript"
+languages:
+  - language: "English"
+    fluency: "Native speaker"
+  - language: "Chinese"
+    fluency: "Professional working fluency"
+interests:
+  - name: "Internet of Things"
+    keywords:
+      - "Raspberry Pi"
+      - "Arduino"
+  - name: "Reading"
+    keywords:
+      - "Classical Greek Literature"
+      - "Poetry"
+  - name: "Cycling"
+    keywords:
+      - "Long Distance"
