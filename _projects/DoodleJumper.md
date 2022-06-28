@@ -18,7 +18,7 @@ accent_color: '#4fb1ba'
 accent_image:
   background: '#193747'
 theme_color: '#193747'
-sitemap: false
+sitemap: true
 ---
 
 This is Doodle Jumper! (Creative name, right?). It is a Doodle Jump clone written for Android and iOS.

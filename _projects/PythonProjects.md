@@ -18,7 +18,7 @@ accent_color: '#4fb1ba'
 accent_image:
   background: '#193747'
 theme_color: '#193747'
-sitemap: false
+sitemap: true
 ---
 
 This is a collection of small programs written in Python. I am still actively working on them and will add to them continuously as I play and experiment with different things.

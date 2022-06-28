@@ -19,7 +19,7 @@ accent_color: '#4fb1ba'
 accent_image:
   background: '#193747'
 theme_color: '#193747'
-sitemap: false
+sitemap: true
 ---
 
 This is RolyPolyGO. It is a game written in C# that runs on the Unity engine. I have a login system that tracks player currency which can be spent on different skins in the game. The data is stored in AWs on an RDS database. I use PHP running on EC2 instances to help integrate with the backend. 

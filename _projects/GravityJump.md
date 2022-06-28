@@ -18,7 +18,7 @@ accent_color: '#4fb1ba'
 accent_image:
   background: '#193747'
 theme_color: '#193747'
-sitemap: false
+sitemap: true
 ---
 
 This is Gravity Jump. It is a cross-platform game written primarily for mobile devices (Android/iOS), it uses the cocos2dx library and is written in C++. 

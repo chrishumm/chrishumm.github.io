@@ -19,7 +19,7 @@ accent_color: '#4fb1ba'
 accent_image:
   background: '#193747'
 theme_color: '#193747'
-sitemap: false
+sitemap: true
 ---
 
 MineRunner is a game written in C++ that uses the Allegro library. The goal of the game is to get to the end of the stage, whilst also collecting coins and other trinkets along the way.

@@ -18,7 +18,7 @@ accent_color: '#4fb1ba'
 accent_image:
   background: '#193747'
 theme_color: '#193747'
-sitemap: false
+sitemap: true
 ---
 
 Ever just wanted to stop an exe from running in the background without a fuss? That's what I wanted. I created this simple exe blocker that will automatically close any exes that match the program you wish to block and stop them running in memory.

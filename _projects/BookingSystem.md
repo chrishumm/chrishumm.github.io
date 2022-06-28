@@ -18,7 +18,7 @@ accent_color: '#4fb1ba'
 accent_image:
   background: '#193747'
 theme_color: '#193747'
-sitemap: false
+sitemap: true
 ---
 
 This program helps you organise bookings for performers or events. It is written in Java and uses the swing library to draw GUI. The performers and details are saved using SQL statements to a local Derby database.
