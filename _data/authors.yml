@@ -23,6 +23,7 @@ author1:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
+    linkedin:        https://www.linkedin.com/in/chrishumm
     twitter:         chrishumm_
     github:          https://www.github.com/chrishumm
     email:           website@chrishumm.com
@@ -54,7 +55,6 @@ author1:
     # npm:             <username>
     # hackernews:      <username>
     # trello:          <firstnamelastname>
-     linkedin:        https://www.linkedin.com/in/chrishumm
     # xing:            <firstname_lastname_counter>
     # blogger:         <number>
     # delicious:       <username>
