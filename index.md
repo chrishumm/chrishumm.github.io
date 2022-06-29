@@ -27,6 +27,7 @@ Feel free to [contact me](#contact-me).
 * [Twitter](https://www.twitter.com/chrishumm_): `@chrishumm_`
 * [LINE](https://line.me/R/ti/p/chumm92): `chumm92`
 * [Phone](tel:866907487411): `(+886)0907487411`
-* [Github](https://www.github.com/chrishumm) `chrishumm`
+* [Github](https://www.github.com/chrishumm)
+* [Linkedin](https://www.linkedin.com/in/chrishumm)
 
 <!--posts-->
