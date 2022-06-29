@@ -15,7 +15,7 @@ basics:
     I'm Chris from Southampton, UK
     I am programmer who has developed several projects and enjoys developing software in my free time.
     My interests include tinkering with Linux, learning new technologies and travelling.
-    I have worked for over five years teaching professionally in Taiwan, both as a tutor and instructor. 
+    I have worked for over six years teaching professionally in Taiwan, both as a tutor and instructor. 
   profiles:
     - network: "Twitter"
       username: "chrishumm_"
@@ -35,9 +35,10 @@ work:
     summary: >
       Private school based in southern Taiwan focused on young and adult learners.
     highlights:
-      - "Professonally taught language skills and implemented innovative methods to engage learners"
-      - "Successfully authored and edited educational materials used in textbooks."
-      - "Received outstanding employee award in 2022"
+      - "Taught over 1000 students using innovative teaching methods."
+      - "Authored and edited over 100 educational materials used in textbooks."
+      - "Received outstanding employee award in 2022 out of over 100 employees."
+      - "Organized and participated in over 10 successful public publicity events."
   - company: "Hess Educational Group"
     position: "Teacher"
     website: "http://hess.com.tw"
@@ -46,23 +47,24 @@ work:
     summary: >
       An educational group based throughout Taiwan.
     highlights:
-      - "Professionally instructed English to young learners and young adults."
-      - "Organised and participated in public speaking events at libraries and public areas."
-      - "Managed speech competitions in Taiwan as a judge"
+      - "Instructed English professionally to 1 00's of young learners."
+      - "Managed over three speech competitions in Taiwan as a judge."
+      - "Worked in two cross-cultural teams to deliver lessons."
   - company: "Private Tutor"
     position: "Tutor"
     website: "https://chrishumm.com"
     startDate: "2017-04-01"
-    endDate: ""
+    endDate: "2022-05-31"
     summary: >
       Tutored adults and univeristy students.
     highlights:
-      - "Successfully taught TOIEC/IELTS test preparation."
-      - "Prepared and enhanced clients’ oral presentation skills."
+      - "Tutored over 30 university students test preparation for TOIEC/IELTS."
+      - "Mentored over 10 clients to improve presenting skills in English."
+      - "Coordinated over 100 lessons successful online and in-person."
   - company: "Self"
-    position: "Website Specialist"
+    position: "Website Owner"
     startDate: "2009-04-01"
-    endDate: "2013-04-01"
+    endDate: "2016-04-01"
     summary: >
       Created, managed and owned affiliate marketing website.
     highlights:
@@ -114,6 +116,7 @@ skills:
       - "S3"
       - "Lambda"
       - "EC2"
+      - "RDS"
   - name: "C++"
     keywords:
       - "DirectX"
