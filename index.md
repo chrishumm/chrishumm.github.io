@@ -8,7 +8,7 @@ selected_posts:
 posts_page: /blog/
 featured: true
 
-sitemap: false
+sitemap: true
 ---
 
 
