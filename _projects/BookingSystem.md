@@ -27,7 +27,3 @@ It is currently an alpha, so expect some quirks.
 
 You can view the [code](https://github.com/chrishumm/BookingSystem) over on my [Github :)](https://www.github.com/chrishumm)
 Or download it and have a play!
-
-![Full-width image](/assets/img/projects/BookingSystem.png){:.lead width="800" height="100" loading="lazy"}
-A simple GUI menu showing the essentials.
-{:.figcaption}
